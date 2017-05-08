@@ -1,7 +1,7 @@
-.wrapping_with_padding
+.wrapper_with_padding
   #doc_show
     %h1.title= @doc.title
-    %p= simple_format(@doc.content)
+    %p.content= simple_format(@doc.content)
     .buttons
       = link_to 'All Documents', docs_path, class: "button"
       = link_to 'Edit Document', edit_doc_path(@doc), class: "button"
